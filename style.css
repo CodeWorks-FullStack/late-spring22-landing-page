@@ -1,0 +1,44 @@
+* {
+  transition: all .5s ease;
+}
+
+
+img {
+  filter: grayscale(.9);
+}
+
+main img:hover {
+  transform: scale(1.01);
+  filter: grayscale(0);
+}
+
+.headshot {
+  height: 100vh;
+  width: 40%;
+}
+
+@media only screen and (min-width: 768px) {
+  main {
+    margin-left: 40% !important;
+  }
+}
+
+.headshot img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+header {
+  line-height: 3em;
+}
+
+
+.reviewer-img {
+  margin-right: 1.5em;
+  height: 100px;
+  min-width: 100px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 50%;
+}
